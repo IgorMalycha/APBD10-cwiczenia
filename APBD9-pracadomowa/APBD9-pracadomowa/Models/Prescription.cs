@@ -9,9 +9,9 @@ public class Prescription
     [Key]
     public int IdPrescription { get; set; }
 
-    public DateType Date { get; set; }
+    public DateTime Date { get; set; }
 
-    public DateType DueDate { get; set; }
+    public DateTime DueDate { get; set; }
     
     public int IdPatient { get; set; }
     

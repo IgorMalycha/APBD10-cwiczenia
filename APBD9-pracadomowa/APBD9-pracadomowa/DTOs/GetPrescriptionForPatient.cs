@@ -7,10 +7,10 @@ public class GetPrescriptionForPatient
 {
     public PatientDTO Patient { get; set; }
 
-    public ICollection<MedicamentDTO> Medicaments { get; set; }
+    public ICollection<GetMedicamentDTO> Medicaments { get; set; }
 
-    public DateType Date { get; set; }
+    public DateTime Date { get; set; }
     
-    public DateType DueDate { get; set; }
+    public DateTime DueDate { get; set; }
     
 }

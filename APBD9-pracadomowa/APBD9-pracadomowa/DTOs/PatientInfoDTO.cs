@@ -1,8 +1,6 @@
-using System.ComponentModel.DataAnnotations;
-
 namespace APBD9_pracadomowa.DTOs;
 
-public class PatientDTO
+public class PatientInfoDTO
 {
     public int IdPatient { get; set; }
     
@@ -11,5 +9,6 @@ public class PatientDTO
     public string LastName { get; set; }
     
     public DateTime BirthDate { get; set; }
-    
+
+    public ICollection<PrescriptionDTO> Prescriptions { get; set; }
 }

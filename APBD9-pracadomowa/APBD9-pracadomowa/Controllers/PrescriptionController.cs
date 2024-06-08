@@ -22,14 +22,25 @@ public class PrescriptionController : ControllerBase
     {
         if (await _dbServices.DoesPatientExist(getPrescriptionForPatient.Patient.IdPatient))
         {
-           await _dbServices.AddPatient(getPrescriptionForPatient.Patient);
+           await _dbServices.AddPatient(getPrescriptionForPatient);
         }
 
-        int medicationId = await _dbServices.DoesMedicationsExist(getPrescriptionForPatient.Medicaments);
-        if (medicationId > -1)
+        if (await _dbServices.DoesMedicationsExist(getPrescriptionForPatient.Medicaments))
         {
-            return NotFound($"Medication with given id: {medicationId} doesn not exist");
+            return NotFound("Medication does not exist");
         }
+
+        if (await _dbServices.IsAbove10Medication(getPrescriptionForPatient.Medicaments))
+        {
+            return NotFound("Above 10 Medications");
+        }
+
+        if (await _dbServices.IsDueDateLessDate(getPrescriptionForPatient))
+        {
+            return NotFound("DueDate is less then Date");
+        }
+
+        await _dbServices.AddPatient(getPrescriptionForPatient);
     
         return Created();
     }
