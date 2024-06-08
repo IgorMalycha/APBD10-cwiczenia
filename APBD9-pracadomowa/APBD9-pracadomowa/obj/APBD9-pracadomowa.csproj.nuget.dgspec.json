@@ -1,27 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\s28192\\Desktop\\APBD10-cwiczenia\\APBD9-pracadomowa\\APBD9-pracadomowa\\APBD9-pracadomowa.csproj": {}
+    "B:\\s28192\\APBD\\APBD10-cwiczenia\\APBD9-pracadomowa\\APBD9-pracadomowa\\APBD9-pracadomowa.csproj": {}
   },
   "projects": {
-    "C:\\Users\\s28192\\Desktop\\APBD10-cwiczenia\\APBD9-pracadomowa\\APBD9-pracadomowa\\APBD9-pracadomowa.csproj": {
+    "B:\\s28192\\APBD\\APBD10-cwiczenia\\APBD9-pracadomowa\\APBD9-pracadomowa\\APBD9-pracadomowa.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\s28192\\Desktop\\APBD10-cwiczenia\\APBD9-pracadomowa\\APBD9-pracadomowa\\APBD9-pracadomowa.csproj",
+        "projectUniqueName": "B:\\s28192\\APBD\\APBD10-cwiczenia\\APBD9-pracadomowa\\APBD9-pracadomowa\\APBD9-pracadomowa.csproj",
         "projectName": "APBD9-pracadomowa",
-        "projectPath": "C:\\Users\\s28192\\Desktop\\APBD10-cwiczenia\\APBD9-pracadomowa\\APBD9-pracadomowa\\APBD9-pracadomowa.csproj",
-        "packagesPath": "C:\\Users\\s28192\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\s28192\\Desktop\\APBD10-cwiczenia\\APBD9-pracadomowa\\APBD9-pracadomowa\\obj\\",
+        "projectPath": "B:\\s28192\\APBD\\APBD10-cwiczenia\\APBD9-pracadomowa\\APBD9-pracadomowa\\APBD9-pracadomowa.csproj",
+        "packagesPath": "C:\\Users\\igorm\\.nuget\\packages\\",
+        "outputPath": "B:\\s28192\\APBD\\APBD10-cwiczenia\\APBD9-pracadomowa\\APBD9-pracadomowa\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\s28192\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\igorm\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -34,6 +32,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -43,6 +46,20 @@
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
               "version": "[8.0.3, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.6, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.6, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[8.0.6, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
@@ -68,7 +85,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.301/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
