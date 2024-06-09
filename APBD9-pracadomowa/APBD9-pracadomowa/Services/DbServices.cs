@@ -67,7 +67,18 @@ public class DbServices : IDbServices
 
     public async Task<PatientInfoDTO> GetPatientInfo(int IdPatient)
     {
-        
+        var patientInfo = new PatientInfoDTO()
+        {
+            IdPatient = IdPatient,
+            FirstName = await _apbdContext.Patients.Where(c => c.IdPatient == IdPatient)
+                .Select(c => c.FirstName).FirstOrDefaultAsync(),
+            LastName = await _apbdContext.Patients.Where(c => c.IdPatient == IdPatient)
+                .Select(c => c.LastName).FirstOrDefaultAsync(),
+            BirthDate = await _apbdContext.Patients.Where(c => c.IdPatient == IdPatient)
+                .Select(c => c.BirthDate).FirstOrDefaultAsync(),
+        };
+
+        return patientInfo;
     }
 
 }

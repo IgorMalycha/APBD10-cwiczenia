@@ -10,7 +10,8 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddControllers();
 
 builder.Services.AddDbContext<APBDContext>(options => 
-    options.UseSqlServer(builder.Configuration.GetConnectionString("Data Source=localhost\\SQLEXPRESS;Initial Catalog=apbd9;Integrated Security=True;Trust Server Certificate=True;")));
+    options.UseSqlServer(builder.Configuration
+        .GetConnectionString("Default")));
 
 var app = builder.Build();
 

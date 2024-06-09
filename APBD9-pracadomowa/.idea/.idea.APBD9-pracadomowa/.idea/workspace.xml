@@ -10,20 +10,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d0596f75-68aa-469b-b538-e32058bc1e3d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/APBD9-pracadomowa/Controllers/PatientController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/APBD9-pracadomowa/DTOs/DoctorDTO.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/APBD9-pracadomowa/DTOs/GetMedicamentDTO.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/APBD9-pracadomowa/DTOs/PatientInfoDTO.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/APBD9-pracadomowa/DTOs/PrescriptionDTO.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.APBD9-pracadomowa/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.APBD9-pracadomowa/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/APBD9-pracadomowa/Controllers/PrescriptionController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/APBD9-pracadomowa/Controllers/PrescriptionController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/APBD9-pracadomowa/DTOs/GetPrescriptionForPatient.cs" beforeDir="false" afterPath="$PROJECT_DIR$/APBD9-pracadomowa/DTOs/GetPrescriptionForPatient.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/APBD9-pracadomowa/DTOs/MedicamentDTO.cs" beforeDir="false" afterPath="$PROJECT_DIR$/APBD9-pracadomowa/DTOs/MedicamentDTO.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/APBD9-pracadomowa/DTOs/PatientDTO.cs" beforeDir="false" afterPath="$PROJECT_DIR$/APBD9-pracadomowa/DTOs/PatientDTO.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/APBD9-pracadomowa/Models/Patient.cs" beforeDir="false" afterPath="$PROJECT_DIR$/APBD9-pracadomowa/Models/Patient.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/APBD9-pracadomowa/Models/Prescription.cs" beforeDir="false" afterPath="$PROJECT_DIR$/APBD9-pracadomowa/Models/Prescription.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/APBD9-pracadomowa/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/APBD9-pracadomowa/Program.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/APBD9-pracadomowa/Services/DbServices.cs" beforeDir="false" afterPath="$PROJECT_DIR$/APBD9-pracadomowa/Services/DbServices.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/APBD9-pracadomowa/Services/IDbServices.cs" beforeDir="false" afterPath="$PROJECT_DIR$/APBD9-pracadomowa/Services/IDbServices.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/APBD9-pracadomowa/obj/Debug/net8.0/APBD9-pracadomowa.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/APBD9-pracadomowa/obj/Debug/net8.0/APBD9-pracadomowa.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/APBD9-pracadomowa/obj/Debug/net8.0/APBD9-pracadomowa.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/APBD9-pracadomowa/obj/Debug/net8.0/APBD9-pracadomowa.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/APBD9-pracadomowa/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/APBD9-pracadomowa/obj/rider.project.restore.info" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,6 +38,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    ".NET Launch Settings Profile.APBD9-pracadomowa: http.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
@@ -120,7 +113,8 @@
       <option name="presentableId" value="Default" />
       <updated>1717767028295</updated>
       <workItem from="1717767029381" duration="1565000" />
-      <workItem from="1717857217751" duration="12612000" />
+      <workItem from="1717857217751" duration="12682000" />
+      <workItem from="1717951092625" duration="368000" />
     </task>
     <servers />
   </component>
