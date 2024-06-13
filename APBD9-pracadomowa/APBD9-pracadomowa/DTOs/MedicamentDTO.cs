@@ -8,5 +8,5 @@ public class MedicamentDTO
     
     public string Description { get; set; }
     
-    public int Dose { get; set; }
+    public int? Dose { get; set; }
 }

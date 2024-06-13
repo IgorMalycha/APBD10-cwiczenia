@@ -11,11 +11,16 @@
   <component name="ChangeListManager">
     <list default="true" id="d0596f75-68aa-469b-b538-e32058bc1e3d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.APBD9-pracadomowa/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.APBD9-pracadomowa/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/APBD9-pracadomowa/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/APBD9-pracadomowa/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/APBD9-pracadomowa/Controllers/PatientController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/APBD9-pracadomowa/Controllers/PatientController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/APBD9-pracadomowa/Controllers/PrescriptionController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/APBD9-pracadomowa/Controllers/PrescriptionController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/APBD9-pracadomowa/Models/Doctor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/APBD9-pracadomowa/Models/Doctor.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/APBD9-pracadomowa/Models/Medicament.cs" beforeDir="false" afterPath="$PROJECT_DIR$/APBD9-pracadomowa/Models/Medicament.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/APBD9-pracadomowa/Models/Patient.cs" beforeDir="false" afterPath="$PROJECT_DIR$/APBD9-pracadomowa/Models/Patient.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/APBD9-pracadomowa/Models/Prescription.cs" beforeDir="false" afterPath="$PROJECT_DIR$/APBD9-pracadomowa/Models/Prescription.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/APBD9-pracadomowa/Services/DbServices.cs" beforeDir="false" afterPath="$PROJECT_DIR$/APBD9-pracadomowa/Services/DbServices.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/APBD9-pracadomowa/Services/IDbServices.cs" beforeDir="false" afterPath="$PROJECT_DIR$/APBD9-pracadomowa/Services/IDbServices.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/APBD9-pracadomowa/obj/Debug/net8.0/APBD9-pracadomowa.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/APBD9-pracadomowa/obj/Debug/net8.0/APBD9-pracadomowa.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/APBD9-pracadomowa/obj/Debug/net8.0/APBD9-pracadomowa.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/APBD9-pracadomowa/obj/Debug/net8.0/APBD9-pracadomowa.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/APBD9-pracadomowa/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/APBD9-pracadomowa/obj/rider.project.restore.info" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,27 +41,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    ".NET Launch Settings Profile.APBD9-pracadomowa: http.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;.NET Launch Settings Profile.APBD9-pracadomowa: http.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "rider.external.source.directories": [
-      "C:\\Users\\igorm\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\DecompilerCache",
-      "C:\\Users\\igorm\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\SourcesCache",
-      "C:\\Users\\igorm\\AppData\\Local\\Symbols\\src"
+  &quot;keyToStringList&quot;: {
+    &quot;rider.external.source.directories&quot;: [
+      &quot;C:\\Users\\igorm\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\DecompilerCache&quot;,
+      &quot;C:\\Users\\igorm\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\SourcesCache&quot;,
+      &quot;C:\\Users\\igorm\\AppData\\Local\\Symbols\\src&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected=".NET Launch Settings Profile.APBD9-pracadomowa: http">
     <configuration name="APBD9-pracadomowa: IIS Express" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/APBD9-pracadomowa/APBD9-pracadomowa.csproj" />
@@ -114,7 +119,8 @@
       <updated>1717767028295</updated>
       <workItem from="1717767029381" duration="1565000" />
       <workItem from="1717857217751" duration="12682000" />
-      <workItem from="1717951092625" duration="368000" />
+      <workItem from="1717951092625" duration="1586000" />
+      <workItem from="1718276325495" duration="3804000" />
     </task>
     <servers />
   </component>

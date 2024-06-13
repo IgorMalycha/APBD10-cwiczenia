@@ -52,33 +52,25 @@ public class DbServices : IDbServices
         return getPrescriptionForPatient.DueDate <= getPrescriptionForPatient.Date;
     }
 
-    public async Task AddPrescription(GetPrescriptionForPatient getPrescriptionForPatient)
+    public async Task AddPrescription(Prescription prescription)
     {
-        _apbdContext.Prescriptions.AddAsync(new Prescription()
-        {
-            Date = getPrescriptionForPatient.Date,
-            DueDate = getPrescriptionForPatient.DueDate,
-            IdPatient = getPrescriptionForPatient.Patient.IdPatient
-        });
-        
-        
-        //do dokonczenia
+
+        await _apbdContext.Prescriptions.AddAsync(prescription);
+
+        _apbdContext.SaveChanges();
     }
 
-    public async Task<PatientInfoDTO> GetPatientInfo(int IdPatient)
+    public async Task<Patient> GetPatientInfo(int IdPatient)
     {
-        var patientInfo = new PatientInfoDTO()
-        {
-            IdPatient = IdPatient,
-            FirstName = await _apbdContext.Patients.Where(c => c.IdPatient == IdPatient)
-                .Select(c => c.FirstName).FirstOrDefaultAsync(),
-            LastName = await _apbdContext.Patients.Where(c => c.IdPatient == IdPatient)
-                .Select(c => c.LastName).FirstOrDefaultAsync(),
-            BirthDate = await _apbdContext.Patients.Where(c => c.IdPatient == IdPatient)
-                .Select(c => c.BirthDate).FirstOrDefaultAsync(),
-        };
+        return await _apbdContext.Patients.Include(e => e.Prescriptions)
+            .ThenInclude(e => e.PrescriptionMedicaments).ThenInclude(e => e.Medicament)
+            .Include(e => e.Prescriptions).ThenInclude(e => e.Doctor)
+            .Where(e => e.IdPatient == IdPatient).FirstOrDefaultAsync();
 
-        return patientInfo;
     }
 
+    public async Task AddPrescriptionmedicaments(IEnumerable<PrescriptionMedicament> prescriptionMedicaments)
+    {
+        await _apbdContext.PrescriptionMedicaments.AddRangeAsync(prescriptionMedicaments);
+    }
 }

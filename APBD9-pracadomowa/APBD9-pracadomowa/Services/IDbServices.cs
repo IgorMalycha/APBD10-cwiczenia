@@ -13,8 +13,8 @@ public interface IDbServices
     Task<bool> IsAbove10Medication(ICollection<GetMedicamentDTO> medicaments);
     Task<bool> IsDueDateLessDate(GetPrescriptionForPatient getPrescriptionForPatient);
     
-    Task AddPrescription(GetPrescriptionForPatient getPrescriptionForPatient);
+    Task AddPrescription(Prescription prescription);
 
-    Task<PatientInfoDTO> GetPatientInfo(int IdPatient);
+    Task<Patient> GetPatientInfo(int IdPatient);
 
 }
