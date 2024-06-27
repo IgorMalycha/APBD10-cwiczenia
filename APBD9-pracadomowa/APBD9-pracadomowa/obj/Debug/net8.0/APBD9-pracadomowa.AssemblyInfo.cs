@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("APBD9-pracadomowa")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+990fd89a10ca3a3bb8497bfbc832c0a420be5302")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2627800171ec7c995a8336c89f85513c8bc49724")]
 [assembly: System.Reflection.AssemblyProductAttribute("APBD9-pracadomowa")]
 [assembly: System.Reflection.AssemblyTitleAttribute("APBD9-pracadomowa")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
